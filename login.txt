@@ -1,5 +1,53 @@
-void fun(){
+#include <iostream>
 
+using namespace std;
+/*class rectangle{
+private:
+    float length;
+    float width;
+public:
+    void set(float l, float w){
+          width = w;
+          length = l;
+    }
+     float area(){
+     return width*length;
+     }
 
+   void print(){
+   cout << "Area = "<< area() << endl;
+   }*/
+ class square{
+ private:
+     float side;
+ public:
+     void set(float s){
+     side = s;
+     }
+     //float area(){
+     //return side*side;
+     //}
+     float perimeter(){
+     return side*4;
+     }
+    void print(){
+    //cout << "Area = " << area() << endl;
+    cout << "Perimeter = " << perimeter() << endl;
+    }
+ };
+int main()
+{
+   /*rectangle r;
+    float x , y;
+    cout << "Enter length & width" << endl;
+    cin >> x >> y;
+    r.set(x,y);
+    r.print();*/
+    square s;
+    float z;
+    cout << "Enter side length " << endl;
+    cin >> z;
+    s.set(z);
+    s.print();
+    return 0;
 }
-//hanna
